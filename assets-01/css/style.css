@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 3px 10px #A25939;
+    box-shadow: 0px 3px 10px #c97f43;
     backdrop-filter: blur(45px);
 }
 
@@ -164,6 +164,56 @@ nav a:hover {
 .budget a:hover {
     background-color: #11cf31;
 }
+
+/* ######## New Section ######## */
+.default{
+    width: 100vw;
+    padding: 50px 0px ;
+}
+
+.default .sec-title,
+.default .sec-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sec-title{
+    font-size: 20px;
+}
+
+.default .sec-desc{
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .sec-body{
+    margin: auto;
+    max-width: 1100px;
+}
+
+.default.light{
+    background-color: #f7f7f7;
+}
+
+.default.light .sec-title,
+.default.light .sec-body{
+    color:#000;
+}
+
+.default.dark{
+    background-color: #000;
+}
+
+.default.dark .sec-title,
+.default.dark .sec-body{
+    color:#fff;
+}
+
+
+
 
 
 .page-principal {
