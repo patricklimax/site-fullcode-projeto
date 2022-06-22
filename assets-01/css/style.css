@@ -73,7 +73,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(45px);
     margin-top: 40px;
     width: 800px;
@@ -102,7 +102,7 @@ body {
 
 .text3{
     color:#000000;
-    
+    text-shadow: 1px 1px 1px #fff;
     background-color: #28f715;
     padding: 10px 30px;
     border-radius: 60px;
@@ -422,6 +422,7 @@ nav a:hover {
         width: 95vw;
         height: 95vh;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .budget {
