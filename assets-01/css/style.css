@@ -100,6 +100,14 @@ body {
     font-weight: 500;
 }
 
+.text3{
+    color:#000000;
+    
+    background-color: #28f715;
+    padding: 10px 30px;
+    border-radius: 60px;
+}
+
 .menu-bar {
     display: flex;
     align-items: center;
@@ -159,13 +167,13 @@ nav a:hover {
     font-weight: 600;
     border-radius: 40px;
     color: #ffffff;
-    background-color: #222733;
+    background-color: #2449f0;
     margin: 5px;
 }
 
 .budget-head a:hover,
 .budget a:hover {
-    background-color: #11cf31;
+    background-color: #28f715;
 }
 
 /* ######## New Section ######## */
