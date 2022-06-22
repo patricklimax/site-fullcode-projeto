@@ -419,13 +419,21 @@ nav a:hover {
     }
 
     .c-principal-text{
-        width: 90vw;
-        height: 80vh;
+        width: 95vw;
+        height: 95vh;
         text-align: center;
     }
 
     .budget {
         display: none;
+    }
+
+    .text1 {
+        font-size: 3rem;
+    }
+    .text3{
+        font-size: 1.4rem;
+
     }
 
     
