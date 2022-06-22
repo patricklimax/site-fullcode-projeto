@@ -417,6 +417,18 @@ nav a:hover {
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .c-principal-text{
+        width: 90vw;
+        height: 80vh;
+        text-align: center;
+    }
+
+    .budget {
+        display: none;
+    }
+
+    
 }
 
 .sec-body-services{
