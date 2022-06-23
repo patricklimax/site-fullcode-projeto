@@ -17,7 +17,7 @@ body {
     background-color: #fff;
     height: 70px;
     position: fixed;
-    /* overflow: hidden; */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,6 +390,7 @@ nav a:hover {
 @media (max-width:480px) {
     .head {
         position: fixed;
+        overflow: visible;
     }
 
     nav ul {
@@ -795,3 +796,4 @@ ul {
     height: 50px;
 
 } */
+
