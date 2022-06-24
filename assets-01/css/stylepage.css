@@ -1,0 +1,819 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
+}
+
+.head {
+    display: flex;
+    width: 100vw;
+    background-color: #fafafa;
+    height: 70px;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 10px #707070;
+    backdrop-filter: blur(45px);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 1100px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-imagem {
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+nav ul {
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav a {
+    display: block;
+    padding: 6px 8px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav a:hover {
+    border-top: 3px solid #000;
+    transition: 0.155s;
+    border-bottom: 3px solid #000;
+    color: #A82A0A;
+}
+
+.budget-head a,
+.budget a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 40px;
+    font-family: 'Titillium Web', sans-serif, 'Helvetica Neue';
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #2449f0;
+    margin: 5px;
+}
+
+.budget-head a:hover,
+.budget a:hover {
+    background-color: #10c400;
+}
+
+/* ########## CSS-main-section-geral ########## */
+.default {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.default.light {
+    background-color: #f1f1f1;
+}
+
+.default.light .sec-title,
+.default.light .sec-body {
+    color: #000;
+}
+
+.default.dark {
+    background-color: #010101;
+}
+
+.default.dark .sec-title,
+.default.dark .sec-body {
+    color: #dadada;
+}
+
+.default .sec-title,
+.default .sec-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sec-title {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.default .sec-desc {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.default .sec-body {
+    margin: auto;
+    max-width: 1100px;
+    height: calc(100vh - 165px);
+    margin-bottom: 20px;
+}
+
+/* deletar linhas ao final */
+/* .default.light .sec-body,
+.default.dark .sec-body{
+    background-color: rgb(173, 173, 173);
+} */
+
+/* ########## FIM-main-section-geral ########## */
+/* ####### CSS - section 01 ######## */
+#home {
+    background-image: url('../imagem/banner_andrew-neel-cckf4TsHAuw-unsplash.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home .sec-body {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-body {
+    width: 1100px;
+}
+
+.sec-body-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-body-home-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(45px);
+    border-radius: 40px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top:70px;
+    margin-bottom: 20px;
+}
+
+.sec-body-home-text h2,
+.sec-body-home-text h3 {
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+    width: 690px;
+}
+
+.sec-body-home-text h2{
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-bottom: 75px;
+}
+
+.sec-body-home-text h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sec-body-home .sec-body-home-button{
+    align-self: flex-end;
+   
+}
+/* ####### FIM CSS - section 01 ######## */
+
+/* ######## CSS - section 02 ######## */
+.sec-body-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.sec-body-company h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sec-body-company p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-us,
+.mission-vision,
+.values {
+    width: 100%;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+    text-align: center;
+    color: #A82A0A;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.mission,
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    padding: 10px;
+    text-align: center;
+}
+
+.division {
+    background-color: #000;
+    width: 1px;
+}
+
+.values {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+}
+
+.values-title {
+    margin-top: 15px;
+}
+
+.value-itens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    height: 75%;
+}
+
+
+.value1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #A82A0A;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 15px 10px;
+}
+
+.value1 h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.value1 p {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #bebebe;
+    margin-top: 25px;
+}
+
+/* ######## fim - section 02 ######## */
+
+
+.mm-line {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: #b28756;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+
+.mm-line {
+    height: 4px;
+    background-color: #ffffff;
+}
+
+@media (max-width:480px) {
+    .head {
+        position: fixed;
+        overflow: visible;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        height: auto;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    .head {
+        height: auto;
+    }
+
+    .budget-head {
+        display: none;
+    }
+
+    .mm-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #131212;
+    }
+
+    .c-principal-text {
+        width: 95vw;
+        height: 95vh;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .budget {
+        display: none;
+    }
+
+    .text1 {
+        font-size: 3rem;
+    }
+
+    .text3 {
+        font-size: 1.4rem;
+
+    }
+}
+
+/* ######## CSS - section 03 ######## */
+.sec-body-services {
+    display: flex;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.sec-body-service {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.division.service{
+    background-color: #bebebe ;
+}
+
+.sec-body-service h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #A82A0A;
+}
+
+.sec-body-service p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #bebebe;
+}
+
+/* ######## fim - section 03 ######## */
+
+/* ######## CSS - section 03 ######## */
+.button {
+    display: inline-block;
+    background-color: #A82A0A;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.sec-body-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-body-projects--filters {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.sec-body-projects--filters ul,
+.sec-body-projects--filters li {
+    list-style: none;
+}
+
+.sec-body-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    color: #414141;
+    border-bottom: 3px solid #eee;
+}
+
+.sec-body-projects--filters li:first-child {
+    border-left: 0;
+}
+
+.sec-body-projects--filters li:hover {
+    border-bottom: 3px solid #a82a0a;
+    cursor: pointer;
+}
+
+.sec-body-projects--capas {
+    width: 100vw;
+    max-width: 1100px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec-body-projects--capa {
+    width: 250px;
+}
+
+.sec-body-projects--capa-area {
+    margin: 10px;
+    width: 230px;
+    height: 140px;
+}
+
+.sec-body-projects--capa-area img {
+    width: inherit;
+    height: inherit;
+}
+
+.sec-body-projects--capa-area a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.sec-body-projects--capa-area-legenda {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.sec-body-projects--capa-area-legenda h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sec-body-projects--capa-area:hover .sec-body-projects--capa-area-legenda {
+    display: flex;
+    cursor: pointer;
+}
+
+/* ######## fim - section 04 ######## */
+
+/* ######## CSS - section 05 ######## */
+.sec-body-team {
+    background-image: url('/assets-01/imagem/pascal-swier-7de474KZIbs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-body-team .sliders {
+    /* caso tenha mais colocar 1000vw */
+    width: 100%;
+    display: flex;
+    /* display: flex; */
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #2449f0; */
+}
+
+.sec-body-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 10px;
+    /* align-self: center; */
+    /* margin: auto; */
+}
+
+
+.sec-body-team .slide-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 30px;
+}
+
+.sec-body-team .sliders-pointers {
+    /* width: 100vw; */
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #10c400; */
+}
+
+.sec-body-team .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sec-body-team .pointer.active {
+    background-color: #ffffff;
+}
+
+.sec-team-avatar {
+    width: 150px;
+    height: auto;
+}
+
+.sec-team-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.sec-team-role {
+    font-size: 14px;
+    color: #a82a0a;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.sec-team-social {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sec-team-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.sec-team-social a:hover {
+    background-color: #a82a0a;
+}
+/* ######## fim - section 05 ######## */
+/* ######## CSS - footer ######## */
+
+.sec-body-footer-footer {
+    margin-top: 20px;
+    /* background-color: #2449f0; */
+    padding: 10px 0px;
+}
+
+.sec-body-footer {
+    display: flex;
+    /* background-color: #10c400; */
+}
+
+.sec-body-footer-left,
+.sec-body-footer-center,
+.sec-body-footer-right {
+    flex: 1;
+    border-right: 1px solid #dadada;
+    padding: 15px;
+}
+
+.sec-body-footer-center{
+    /* background-color: #10c400; */
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact{
+    width: 100%;
+    max-width: 330px;
+    /* background-color: #2449f0; */
+    padding: 0px 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.field{
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #dadada;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
+    font-size: 13px;
+    width: 100%;
+    color: #000000;
+}
+
+textarea{
+    height: 110px;
+    resize: none;
+}
+
+input[type=number]{
+    appearance: textfield;
+}
+
+.btn-enviar{
+    background-color: #dadada;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    margin-top: 10px;
+    }
+
+.btn-enviar:hover{
+    background-color: #10c400;
+    color: #fff;
+}
+
+.sec-body-footer:first-child {
+    border-left: 1px solid #b9b9b9;
+}
+
+.sec-body-footer h6,
+.sec-body-footer h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sec-body-footer h6 {
+    font-size: 20px;
+    color: #fff
+}
+
+.sec-body-footer h5 {
+    font-size: 14px;
+    color: #dadada;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.address h6,
+.address h5,
+.address ul,
+.moreinfo h6,
+.moreinfo h5 {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.contacts-directs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    margin-top: 50px;
+}
+
+
+.contact-direct{
+    margin: 4px;
+    display: flex;
+    align-items: center;    
+}
+
+
+.contact-direct a{
+    text-decoration: none;
+    color: #dadada;
+    margin: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+
+.contact-direct img{
+    width: 30px;
+    border-radius: 15px;
+    background-color: #181818;
+}
+
+.contact-direct a:hover{
+    color: #a82a0a;
+}
+
+
+.moreinfo h5:hover {
+    color: #a82a0a;
+}
+
+
+.copyright {
+    width: 100%;
+    margin-top: 20px;
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+    align-items: center;
+    height: 50px;
+    align-self: flex-end;
+}
+
+/* ######## CSS - footer ######## */
