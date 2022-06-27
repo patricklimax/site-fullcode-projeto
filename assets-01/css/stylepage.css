@@ -294,7 +294,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .values-title {
@@ -421,6 +421,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 40px 30px;
     margin: auto;
@@ -444,7 +445,12 @@ nav a:hover {
 .sec-body-service p {
     margin-top: 30px;
     font-size: 16px;
-    color: #bebebe;
+    color: #d3e6ed;
+}
+
+.sec-body-service img {
+    width: 80px;
+    margin-bottom: 20px;
 }
 
 /* ######## fim - section 03 ######## */
