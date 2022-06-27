@@ -5,6 +5,13 @@
 
 }
 
+
+/* azul escuro #00002A */
+/* azul claro #D3E6ED */
+/* azul medio #248EB1 */
+/* amarelo #FCC71E */
+/* vermelho #E43430 */
+
 body {
     font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
 }
@@ -12,14 +19,14 @@ body {
 .head {
     display: flex;
     width: 100vw;
-    background-color: #fafafa;
+    background-color: #FFF;
     height: 70px;
     position: fixed;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 1px 10px #707070;
+    box-shadow: 0px 1px 5px #000;
     backdrop-filter: blur(45px);
 }
 
@@ -66,17 +73,18 @@ nav a {
     display: block;
     padding: 6px 8px;
     text-decoration: none;
-    color: #000;
+    color: #00002A;
     text-align: center;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    border-top: 3px solid #000;
+    border-top: 3px solid #00002A;
     transition: 0.155s;
-    border-bottom: 3px solid #000;
-    color: #A82A0A;
+    border-bottom: 3px solid #00002A;
+    color: #248EB1;
 }
 
 .budget-head a,
@@ -93,14 +101,15 @@ nav a:hover {
     font-weight: 600;
     border-radius: 20px;
     color: #fff;
-    background-color: #2449f0;
+    background-color: #248EB1;
     margin: 5px;
 }
 
 .budget-head a:hover,
-.budget a:hover {
+.budget a:hover{
     background-color: #10c400;
 }
+
 
 /* ########## CSS-main-section-geral ########## */
 .default {
@@ -111,21 +120,21 @@ nav a:hover {
 }
 
 .default.light {
-    background-color: #f1f1f1;
+    background-color: #D3E6ED;
 }
 
 .default.light .sec-title,
 .default.light .sec-body {
-    color: #000;
+    color: #00002A;
 }
 
 .default.dark {
-    background-color: #010101;
+    background-color: #00002A;
 }
 
 .default.dark .sec-title,
 .default.dark .sec-body {
-    color: #dadada;
+    color: #D3E6ED;
 }
 
 .default .sec-title,
@@ -142,7 +151,7 @@ nav a:hover {
 
 .default .sec-desc {
     font-size: 12px;
-    color: #999;
+    color: #248EB1;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -186,7 +195,7 @@ nav a:hover {
 }
 
 .sec-body-home-text {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(45px);
     border-radius: 40px;
     padding: 30px 20px;
@@ -251,7 +260,7 @@ nav a:hover {
     align-items: center;
     flex: 0.8;
     text-align: center;
-    color: #A82A0A;
+    color: #00002A;
 }
 
 .mission-vision {
@@ -272,7 +281,7 @@ nav a:hover {
 }
 
 .division {
-    background-color: #000;
+    background-color: #00002A;
     width: 1px;
 }
 
@@ -303,7 +312,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #A82A0A;
+    background-color: #248EB1;
     margin: 5px;
     border-radius: 20px;
     padding: 15px 10px;
@@ -319,7 +328,7 @@ nav a:hover {
     font-size: 14px;
     font-weight: normal;
     text-align: center;
-    color: #bebebe;
+    color: #D3E6ED;
     margin-top: 25px;
 }
 
@@ -400,6 +409,7 @@ nav a:hover {
     display: flex;
     padding: 0px 10px;
     height: 100%;
+    /* background-color: #10c400; */
 }
 
 .sec-body-service {
@@ -408,17 +418,23 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 20px 10px;
+    padding: 40px 30px;
+    margin: auto;
+    /* background-color: #a82a0a; */
+    
 }
 
-.division.service{
-    background-color: #bebebe ;
+.sec-body-service.center{
+    border-left: 1px solid #d3e6ed;
+    border-right: 1px solid #d3e6ed;
+    
 }
 
 .sec-body-service h4 {
     text-transform: uppercase;
     font-size: 20px;
-    color: #A82A0A;
+    color: #d3e6ed;
+   
 }
 
 .sec-body-service p {
@@ -432,7 +448,7 @@ nav a:hover {
 /* ######## CSS - section 03 ######## */
 .button {
     display: inline-block;
-    background-color: #A82A0A;
+    background-color: #00002A;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -467,8 +483,8 @@ nav a:hover {
     padding: 10px;
     text-transform: uppercase;
     font-size: 13px;
-    border-left: 1px solid #ccc;
-    color: #414141;
+    border-left: 1px solid #D3E6ED;
+    color: #00002A;
     border-bottom: 3px solid #eee;
 }
 
@@ -477,7 +493,7 @@ nav a:hover {
 }
 
 .sec-body-projects--filters li:hover {
-    border-bottom: 3px solid #a82a0a;
+    border-bottom: 3px solid #00002A;
     cursor: pointer;
 }
 
@@ -507,19 +523,19 @@ nav a:hover {
 
 .sec-body-projects--capa-area a {
     text-decoration: none;
-    color: #FFF;
+    color: #d3e6ed;
 }
 
 .sec-body-projects--capa-area-legenda {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 42, 0.9);
     width: inherit;
     height: inherit;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: #d3e6ed;
     text-align: center;
     padding: 0px 5px;
 }
@@ -580,7 +596,7 @@ nav a:hover {
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #000;
+    color: #00002A;
     padding: 30px;
 }
 
@@ -622,7 +638,7 @@ nav a:hover {
 
 .sec-team-role {
     font-size: 14px;
-    color: #a82a0a;
+    color: #248EB1;
     margin-top: 5px;
     font-weight: 600;
 }
@@ -643,33 +659,30 @@ nav a:hover {
     margin-right: 10px;
 }
 
-.sec-team-social a:hover {
+/* .sec-team-social a:hover {
     background-color: #a82a0a;
-}
+} */
 /* ######## fim - section 05 ######## */
 /* ######## CSS - footer ######## */
 
 .sec-body-footer-footer {
     margin-top: 20px;
-    /* background-color: #2449f0; */
     padding: 10px 0px;
 }
 
 .sec-body-footer {
     display: flex;
-    /* background-color: #10c400; */
 }
 
 .sec-body-footer-left,
 .sec-body-footer-center,
 .sec-body-footer-right {
     flex: 1;
-    border-right: 1px solid #dadada;
+    border-right: 1px solid #d3e6ed;
     padding: 15px;
 }
 
 .sec-body-footer-center{
-    /* background-color: #10c400; */
     display: flex;
     justify-content: center;
 }
@@ -677,7 +690,6 @@ nav a:hover {
 .form-contact{
     width: 100%;
     max-width: 330px;
-    /* background-color: #2449f0; */
     padding: 0px 10px;
 }
 
@@ -693,12 +705,12 @@ nav a:hover {
     padding: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border: 2px solid #dadada;
+    border: 2px solid #d3e6ed;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
     font-size: 13px;
     width: 100%;
-    color: #000000;
+    color: #00002A;
 }
 
 textarea{
@@ -711,13 +723,13 @@ input[type=number]{
 }
 
 .btn-enviar{
-    background-color: #dadada;
+    background-color: #d3e6ed;
     border-radius: 10px;
     width: 150px;
-    height: 35px;
+    height: 38px;
     font-size: 14px;
     font-weight: 600;
-    border: 2px solid #ffffff;
+    border: 2px solid #00002A;
     margin-top: 10px;
     }
 
@@ -727,7 +739,7 @@ input[type=number]{
 }
 
 .sec-body-footer:first-child {
-    border-left: 1px solid #b9b9b9;
+    border-left: 1px solid #d3e6ed;
 }
 
 .sec-body-footer h6,
@@ -739,12 +751,12 @@ input[type=number]{
 
 .sec-body-footer h6 {
     font-size: 20px;
-    color: #fff
+    color: #d3e6ed
 }
 
 .sec-body-footer h5 {
     font-size: 14px;
-    color: #dadada;
+    color: #d3e6ed;
     text-transform: none;
     font-weight: 600;
 }
@@ -778,7 +790,7 @@ input[type=number]{
 
 .contact-direct a{
     text-decoration: none;
-    color: #dadada;
+    color: #d3e6ed;
     margin: 3px;
     font-size: 18px;
     font-weight: 600;
@@ -789,23 +801,24 @@ input[type=number]{
 .contact-direct img{
     width: 30px;
     border-radius: 15px;
-    background-color: #181818;
+    background-color: #00002A;
 }
 
 .contact-direct a:hover{
-    color: #a82a0a;
+    color: #248EB1;
 }
 
 
 .moreinfo h5:hover {
-    color: #a82a0a;
+    color: #248EB1;
 }
+
 
 
 .copyright {
     width: 100%;
     margin-top: 20px;
-    color: #b9b9b9;
+    color: #d3e6ed;
     font-size: 14px;
     font-weight: normal;
     display: flex;
