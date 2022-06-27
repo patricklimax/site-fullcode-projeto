@@ -109,7 +109,11 @@ nav a:hover {
 .budget a:hover{
     background-color: #10c400;
 }
-
+.budget{
+    align-self: flex-end;
+    /* margin-top: 20px; */
+    /* margin-right: 140px; */
+}
 
 /* ########## CSS-main-section-geral ########## */
 .default {
