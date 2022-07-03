@@ -8,8 +8,7 @@
 /* azul escuro #00002A */
 /* azul claro #D3E6ED */
 /* azul medio #248EB1 */
-/* amarelo #FCC71E */
-/* vermelho #E43430 */
+
 
 body {
     font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
@@ -754,7 +753,7 @@ input[type=number] {
 
 }
 
-
+/* 
 @media (max-width:820px) {
     nav {
         width: 100%;
@@ -859,4 +858,4 @@ input[type=number] {
     .copyright {
         margin-top: 2px;
     }
-}
+} */
