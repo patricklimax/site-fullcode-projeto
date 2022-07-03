@@ -185,6 +185,7 @@ nav a:hover {
 .default .section-body {
     width: 1100px;
     max-width: 1100px;
+    padding-top: 20px;
 }
 
 .default.light {
