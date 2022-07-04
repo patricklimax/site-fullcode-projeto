@@ -306,13 +306,25 @@
                     <div class="content--footer-principal-contact center">
                         <h6>Precisando de um orçamento?</h6>
                         <div class="area-down-title center">
-                            <form class="form" method="POST"
-                                action="https://formsubmit.co/395db34c7217d1e69b254f0395c6b8af">
-                                <input type="text" class="field" name="name" placeholder="Nome completo" required />
-                                <input type="number" class="field" name="telefone" placeholder="DDD + Número" />
-                                <input type="email" class="field" name="email" placeholder="E-mail" required />
-                                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui" required></textarea>
-                                <input class="btn-enviar" type="submit" value="Enviar" />
+                            <form action="">
+                                <div class="form--input">
+                                    <input type="text" class="form-field" name="" id="form-text" required>
+                                    <label for="form-text">Nome Completo</label>
+                                </div>
+                                <div class="form--input">
+                                    <input type="text" class="form-field" name="" id="form-fone" required>
+                                    <label for="form-fone">DDD + Número</label>
+                                </div>
+                                <div class="form--input">
+                                    <input type="text" class="form-field" name="" id="form-mail" required>
+                                    <label for="form-mail">Seu e-mail</label>
+                                </div>
+                                <div class="form--input">
+                                    <textarea class="form-field" id="form-msg" name="message" required></textarea>
+                                    <label for="form-msg">Fale um pouco sobre seu négocio</label>
+                                </div>
+
+                                <a href="" class="btn-enviar">Enviar</a>
                             </form>
                         </div>
                     </div>
@@ -335,6 +347,34 @@
 
         </div>
     </footer>
+
+    <section>
+        <div class="container">
+            <form action="">
+                <h1>Precisando de um orçamento?</h1>
+                <p>Prencha o formulário abaixo e nos fale um pouco sobre seu negócio</p>
+                <div class="form--input">
+                    <input type="text" class="form-field" name="" id="form-text" required>
+                    <label for="form-text">Nome Completo</label>
+                </div>
+                <div class="form--input">
+                    <input type="text" class="form-field" name="" id="form-fone" required>
+                    <label for="form-fone">DDD + Número</label>
+                </div>
+                <div class="form--input">
+                    <input type="text" class="form-field" name="" id="form-mail" required>
+                    <label for="form-mail">Seu e-mail</label>
+                </div>
+                <div class="form--input">
+                    <textarea class="form-field" id="form-msg" name="message" required></textarea>
+
+                    <label for="form-msg">Fale um pouco sobre seu négocio</label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
 
 </body>
 

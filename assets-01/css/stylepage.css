@@ -17,6 +17,7 @@ body {
 }
 
 .head {
+   
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -35,6 +36,8 @@ body {
     height: 100%;
     width: 1100px;
     max-width: 1100px;
+    position: absolute;
+    
 }
 
 .logo {
@@ -52,6 +55,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 nav ul,
@@ -59,6 +63,7 @@ nav li {
     list-style: none;
     margin: 0;
     padding: 0px;
+    
 }
 
 nav ul {
@@ -451,6 +456,7 @@ nav a:hover {
 
 .content--footer-principal-contact{
     flex:1;
+    padding: 0 15px;
 }
 
 .content--footer-principal-contact h6 {
@@ -484,7 +490,7 @@ nav a:hover {
 .contact-direct {
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    margin-top: 30px;
 }
 
 .contact-direct img {
@@ -493,39 +499,66 @@ nav a:hover {
     background-color: #00002A;
 }
 
+.contact-direct a {
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 600;
+    color: #D3E6ED;
+}
+
+
 .contact-direct a:hover,
 .area-down-title h5:hover {
     color: #248EB1;
     cursor: pointer;
 }
 
-.form-contact {
-    width: 100%;
-    max-width: 330px;
-    padding: 0px 10px;
-}
-
-.form {
+form{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
     align-items: center;
+    justify-content: center;
+
 }
 
-.field {
-    padding: 6px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 2px solid #d3e6ed;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif, 'Helvetica Neue';
-    font-size: 13px;
-    width: 95%;
+.form--input {
+    position: relative;
+    margin: 10px 0;
+    width: 85%;
+}
+
+.form--input label {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    font-size: 12px;
+    transition: all 0.3s;
+    cursor: text;
     color: #00002A;
 }
 
+.form-field {
+    margin-bottom: 3px;
+    width: 100%;
+    border: 0;
+    border: 2px solid #248EB1;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    color: #00002A;
+}
+
+form .form--input .form-field:focus ~ label,
+form .form--input .form-field:valid ~ label {
+    display: inline;
+    transform: translatey(-24px);
+    font-size: 12px;
+    color: #248EB1;
+    font-weight: 600;
+}
+
 textarea {
-    height: 110px;
+    height: 90px;
     resize: none;
 }
 
@@ -534,15 +567,16 @@ input[type=number] {
 }
 
 .btn-enviar {
-    background-color: #d3e6ed;
-    border-radius: 10px;
+    background-color: #248EB1;
+    border-radius: 15px;
     width: 130px;
     height: 35px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-    border: 2px solid #00002A;
+    border: 2px solid #fff;
     margin-top: 10px;
+   
 }
 
 .btn-enviar:hover {
@@ -550,13 +584,27 @@ input[type=number] {
     color: #fff;
 }
 
-.contact-direct a{
+form a{
     text-decoration: none;
     color: #d3e6ed;
-    margin-left: 10px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 /* ######## CSS - footer ######## */
+
+
+
+
+
+
+
+
+
+
+/* ################### */
 .mm-line {
     display: none;
     height: 40px;

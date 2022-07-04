@@ -318,7 +318,6 @@ nav a:hover {
     height: 75%;
 }
 
-
 .value1 {
     flex: 1;
     display: flex;
@@ -343,80 +342,6 @@ nav a:hover {
     text-align: center;
     color: #bebebe;
     margin-top: 25px;
-}
-
-
-
-
-.mm-line {
-    display: none;
-    height: 40px;
-    width: 40px;
-    background-color: #b28756;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 15px;
-}
-
-.mm-line {
-    height: 4px;
-    background-color: #ffffff;
-}
-
-@media (max-width:480px) {
-    .head {
-        position: fixed;
-        overflow: visible;
-    }
-
-    nav ul {
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        right: 0;
-        width: 100%;
-        background-color: #fff;
-        height: auto;
-        margin-top: 5px;
-        text-transform: uppercase;
-    }
-
-    .head {
-        height: auto;
-    }
-
-    .budget-head {
-        display: none;
-    }
-
-    .mm-line {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: #131212;
-    }
-
-    .c-principal-text {
-        width: 95vw;
-        height: 95vh;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .budget {
-        display: none;
-    }
-
-    .text1 {
-        font-size: 3rem;
-    }
-
-    .text3 {
-        font-size: 1.4rem;
-
-    }
-
-
 }
 
 .sec-body-services {
@@ -784,8 +709,12 @@ input {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
+
+.field{
+    outline: none;
+}
+
 
 .contmsg {
     height: 20px;
@@ -803,7 +732,78 @@ input {
     justify-content: center;
     padding: 0px 15px;
     align-items: center;
-    /* background-color: #222733; */
     height: 50px;
 
 } 
+
+
+.mm-line {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: #b28756;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+
+.mm-line {
+    height: 4px;
+    background-color: #ffffff;
+}
+
+@media (max-width:480px) {
+    .head {
+        position: fixed;
+        overflow: visible;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        height: auto;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    .head {
+        height: auto;
+    }
+
+    .budget-head {
+        display: none;
+    }
+
+    .mm-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #131212;
+    }
+
+    .c-principal-text {
+        width: 95vw;
+        height: 95vh;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .budget {
+        display: none;
+    }
+
+    .text1 {
+        font-size: 3rem;
+    }
+
+    .text3 {
+        font-size: 1.4rem;
+
+    }
+
+
+}
